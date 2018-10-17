@@ -1,10 +1,12 @@
 import React from 'react';
 
 const Song = (props) => {
-  return <div>
-    <h4>song</h4>
-
-  </div>
+  console.log(props);
+  return (
+  <div>
+    <h2>{props.position}.  {props.title}</h2>
+    <h4>{props.artist}</h4>
+  </div>)
 }
 
 export default Song;
